@@ -1,0 +1,18 @@
+{
+  "name": "@relliv/tc-no-utils",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
