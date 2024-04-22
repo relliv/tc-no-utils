@@ -1,0 +1,7 @@
+{
+  "installDependencies": true,
+  "startCommand": "cd demo && npm run dev",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
