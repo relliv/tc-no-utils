@@ -1,15 +1,24 @@
 {
   "name": "@relliv/tc-no-utils",
   "description": "Simple TC No utilities for form input validation and testing.",
+  "keywords": [
+    "tc no",
+    "tc no validation",
+    "tc no utils",
+    "tc no testing",
+    "tc id",
+    "tc id validation"
+  ],
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/types/index.d.js",
   "scripts": {
     "dev": "vite",
     "build": "node tools/cleanup && tsc && tsc -p tsconfig.types.json",
-    "test": "jest --no-cache --runInBand"
+    "test": "jest --no-cache --runInBand",
+    "package": "npm run build && npm pack --access public"
   },
   "repository": {
     "type": "git",
