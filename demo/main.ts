@@ -1,11 +1,15 @@
-import { TcNoGenerate } from "./../src/index"
+import { TcNoGenerate, TcNoValidate } from "./../src/index"
 
 import ClipboardJS from "clipboard"
 import Toastify from "toastify-js"
 import "toastify-js/src/toastify.css"
 
 const h1 = document.querySelector("h1"),
-  button = document.querySelector("button")
+  button = document.querySelector("button"),
+  input = document.querySelector("input"),
+  p = document.querySelector("p")
+
+// #region Tc No Generation
 
 const generateTcNo = (): void => {
   const tcNo = TcNoGenerate.generate()
@@ -40,3 +44,19 @@ clipboard.on("success", () => {
     }
   }).showToast()
 })
+
+// #endregion
+
+// #region Tc No Validation
+
+input?.addEventListener("input", () => {
+  const tcNo = input.value
+
+  const result = TcNoValidate.validate(tcNo)
+
+  if (p) {
+    p.textContent = !result.isValid ? result.message : "Geçerli"
+  }
+})
+
+// #endregion
