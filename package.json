@@ -1,5 +1,6 @@
 {
   "name": "@relliv/tc-no-utils",
+  "description": "Simple TC No utilities for form input validation and testing.",
   "private": false,
   "version": "1.0.0",
   "type": "module",
@@ -10,6 +11,23 @@
     "build": "node tools/cleanup && tsc && tsc -p tsconfig.types.json",
     "test": "jest --no-cache --runInBand"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/relliv/tc-no-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/relliv/tc-no-utils/issues"
+  },
+  "author": "Eyüp Erdoğan",
+  "contributors": [
+    "Eyüp Erdoğan <epsilonelittr@gmail.com>"
+  ],
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/toastify-js": "^1.12.3",
