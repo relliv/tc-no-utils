@@ -3,9 +3,11 @@
   "private": false,
   "version": "1.0.0",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "node tools/cleanup && tsc && tsc -p tsconfig.types.json",
     "preview": "vite preview",
     "test": "jest --no-cache --runInBand"
   },
