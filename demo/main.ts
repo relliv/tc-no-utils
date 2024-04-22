@@ -1,4 +1,4 @@
-import { TcNoGenerate } from "./../../src/index"
+import { TcNoGenerate } from "./../src/index"
 
 import ClipboardJS from "clipboard"
 import Toastify from "toastify-js"
