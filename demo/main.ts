@@ -55,7 +55,7 @@ input?.addEventListener("input", () => {
   const result = TcNoValidate.validate(tcNo)
 
   if (p) {
-    p.textContent = !result.isValid ? result.message : "Geçerli"
+    p.textContent = !result.isValid ? result.message : "TC No Valid"
   }
 })
 
