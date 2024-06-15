@@ -10,11 +10,10 @@ This project contains simple utilities for form input validation and testing.
 ## 📦 Installation
 
 ```bash
-#PNPM
 pnpm i @relliv/tc-no-utils
 
-or
-NPM
+# or
+
 npm i @relliv/tc-no-utils
 ```
 
