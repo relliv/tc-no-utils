@@ -31,7 +31,7 @@ export class TcNoValidate {
     }
 
     if (value.length > 9) {
-      if (this.tenthValue(value) != value[10]) {
+      if (this.tenthValue(value) != value[9]) {
         result = {
           isValid: false,
           message: "Geçerli bir TC Kimlik No giriniz. 10. karakter hatalı."
